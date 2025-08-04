@@ -12,7 +12,8 @@
 	"dependencies": {
 		"next": "15.4.5",
 		"react": "19.1.0",
-		"react-dom": "19.1.0"
+		"react-dom": "19.1.0",
+		"styled-components": "^6.1.19"
 	},
 	"devDependencies": {
 		"@types/node": "^20",
@@ -29,7 +30,7 @@
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx,json,css,scss,md}": [
-			"prettier --write --ignore-unknown"
+			"npx prettier --write --ignore-unknown"
 		]
 	}
 }
