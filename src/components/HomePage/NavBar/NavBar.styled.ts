@@ -65,3 +65,8 @@ export const NavLinkReg = styled.a`
 		transition: 0.3s;
 	}
 `;
+
+export const NavLogo = styled.a`
+	height: 40px;
+	width: 156px;
+`;

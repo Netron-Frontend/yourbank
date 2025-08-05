@@ -1,15 +1,15 @@
 'use client';
 import Image from 'next/image';
-import { NavBarStyle, NavLink, NavLinkReg, NavMenu, NavMenuReg } from '@/components/HomePage/NavBar/NavBar.styled';
+import { NavBarStyle, NavLink, NavLinkReg, NavLogo, NavMenu, NavMenuReg } from '@/components/HomePage/NavBar/NavBar.styled';
 
 import Logo from '@/MainPage/Logo.png';
 
 export default function NavBar() {
 	return (
 		<NavBarStyle>
-			<a href='#'>
-				<Image src={Logo} alt={'logo'} width={155.83} height={40} />
-			</a>
+			<NavLogo href='#'>
+				<Image src={Logo} alt={'logo'} />
+			</NavLogo>
 			<NavMenu>
 				<NavLink href='#'>Home</NavLink>
 				<NavLink href='#'>Careers</NavLink>
