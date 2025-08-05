@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { NavBarStyle, NavLink, NavLinkReg, NavMenu, NavMenuReg } from '@/components/HomePage/NavBar/NavBar.styled';
 
+// @ts-ignore
 import Logo from '@/MainPage/Logo.png';
 
 export default function NavBar() {
@@ -20,6 +21,7 @@ export default function NavBar() {
 				<NavLinkReg href='#'>Sign Up</NavLinkReg>
 				<NavLinkReg href='#'>Login</NavLinkReg>
 			</NavMenuReg>
+			{/*test text*/}
 		</NavBarStyle>
 	);
 }
