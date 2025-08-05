@@ -1,0 +1,39 @@
+{
+	"name": "zlatmax",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev --turbopack",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"@types/next": "^9.0.0",
+		"axios": "^1.11.0",
+		"next": "^15.4.5",
+		"react": "19.1.0",
+		"react-dom": "19.1.0",
+		"styled-components": "^6.1.19"
+	},
+	"devDependencies": {
+		"@types/node": "^24.2.0",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"eslint": "^9",
+		"eslint-config-next": "15.4.5",
+		"husky": "^9.1.7",
+		"pinst": "^3.0.0",
+		"typescript": "^5"
+	},
+	"hooks": {
+		"pre-commit": "npm test && npm run foo"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx,json,css,scss,md}": [
+			"npx prettier --write --ignore-unknown"
+		]
+	}
+}
+ 
